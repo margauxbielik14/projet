@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #111827;
+    background-color: #f6f7fb;
+}
+
+header,
+main,
+footer {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+header {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+section,
+aside {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+section {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+h2,
+h3 {
+    font-weight: 700;
+    color: #111827;
+}
+
+section > p,
+form p {
+    color: #6b7280;
+}
+
+article.recipe-box {
+    background-color: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+textarea {
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.error-message {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.commentaire {
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.delete-button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    color: #dc2626;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    color: #6b7280;
+}
+
+footer {
+    border-top: 1px solid #e5e7eb;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+}
